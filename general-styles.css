@@ -22,6 +22,9 @@
 body {
   max-width: 100dvw;
   min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 h1,
@@ -147,6 +150,31 @@ ul li {
   font-weight: 500;
 }
 
+footer {
+  margin-top: auto;
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer .social-links {
+  justify-content: start;
+}
+
+footer .social-links .social-svg {
+  filter: brightness(0) saturate(100%) invert(98%) sepia(22%) saturate(345%)
+    hue-rotate(305deg) brightness(110%) contrast(92%);
+}
+
+footer h1,
+footer h4,
+footer p {
+  color: var(--light-text-color);
+}
+
 @media (width >= 1000px) {
   h1,
   h2 {
@@ -161,6 +189,9 @@ ul li {
   .section {
     padding: 2rem 6rem;
     gap: 4rem;
+  }
+  footer {
+    padding: 5rem 4rem;
   }
 }
 
