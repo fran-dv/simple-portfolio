@@ -1,0 +1,17 @@
+.card-banner.atalaya {
+  background-image: url("./assets/atalaya.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.card.xl {
+  max-width: 500px;
+}
+
+@media (width >= 600px) {
+  .card-banner.atalaya {
+    background-size: 20%;
+    padding-top: min(8rem, 35%);
+  }
+}
