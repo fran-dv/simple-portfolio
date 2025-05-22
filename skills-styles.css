@@ -1,0 +1,31 @@
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skill {
+  min-width: 200px;
+  max-width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: -1px 6px 5px rgba(0, 0, 0, 0.5);
+  gap: 0.5rem;
+}
+.skill svg {
+  width: 60%;
+}
+
+.skill h2,
+.skill h4,
+.skill p {
+  text-align: center;
+  color: var(--dark-text-color);
+}
